@@ -33,8 +33,7 @@ if dataset_id and fieldname and colors_str and quantiles_str:
           "dataset": dataset_id,
           "legend": {"displayName": f"{min_val} - {max_val}"},
           "style": {
-            "color": color,
-            "isSandwiched": false,  
+            "color": color,  
             "filter": f"${fieldname} >= {min_val} && ${fieldname} < {max_val}",
           },
           "type": "simple"
