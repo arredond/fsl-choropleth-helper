@@ -35,6 +35,7 @@ if dataset_id and fieldname and colors_str and quantiles_str:
           "style": {
             "color": color,  
             "filter": f"${fieldname} >= {min_val} && ${fieldname} < {max_val}",
+            "isSandwiched": False
           },
           "type": "simple"
         })
